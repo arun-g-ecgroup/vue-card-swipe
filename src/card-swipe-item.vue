@@ -121,6 +121,7 @@ export default {
       this.$parent.draging = false;
       if (this.touchDistance > this.maxDistance) {
         // 1,2,3,4  2,3,4,1  3,4,1,2
+        debugger;
         this.$parent.cards.pop();
         const currentIndex = this.$parent.currentIndex;
         const nextIndex = this.$parent.currentIndex + 1;
